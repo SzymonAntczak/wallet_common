@@ -13,6 +13,6 @@ export * from './middlewares/validate-request';
 export * from './nats/events/wallet-created-event';
 export * from './nats/events/wallet-updated-event';
 export * from './nats/listener';
-export * from './nats/nats-event';
+export * from './nats/events/nats-event';
 export * from './nats/publisher';
 export * from './nats/subjects';
