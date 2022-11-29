@@ -1,6 +1,6 @@
 import { Subjects } from '../subjects';
 
-export interface NATSEvent {
+export interface CustomEvent {
   subject: Subjects;
   data: any;
 }

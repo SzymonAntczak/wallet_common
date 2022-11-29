@@ -1,8 +1,8 @@
 import { Message, Stan } from 'node-nats-streaming';
 
-import { NATSEvent } from './events/nats-event';
+import { CustomEvent } from './types/custom-event';
 
-export abstract class Listener<T extends NATSEvent> {
+export abstract class Listener<T extends CustomEvent> {
   public abstract subject: T['subject'];
   public abstract queueGroupName: string;
   public abstract onMessage(data: T['data'], msg: Message): void;
